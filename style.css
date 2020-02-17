@@ -8,6 +8,7 @@
 body {
     width: 1020px;
     margin: 0 auto;
+    font-family: Lato-Bold, MyriadPro-Regular;
 }
 
 * {
@@ -16,7 +17,6 @@ body {
 }
 
 header {
-    font-family: Lato-Bold, MyriadPro-Regular;
     height: 89px;
     color: white;
     background-color: #2d303a;
@@ -53,7 +53,73 @@ nav a {
     color: #f06c64;
 }
 
-.line {
+.darkline {
     height: 6px;
     background-color: #323746;
 }
+
+.gallery {
+    height: 585px;
+    background-color: #f06c64;
+    
+}
+
+.left-switcher {
+    width: 16px;
+    height: 27px;
+    margin: 0 0 203px 42px;
+}
+
+.vertical-phone {
+    width: 215px;
+    height: 458px;
+    margin: 53px 0 0 50px;
+    box-shadow: 20px 20px 0 5px #ce5d56;
+    border-radius: 0px 30px 25px 25px;
+}
+
+.horizontal-phone {
+    width: 458px;
+    height: 215px;
+    margin: 0 0 122px 94px;
+    box-shadow: 20px 20px 0 5px #ce5d56;
+    border-radius: 0px 30px 25px 25px;
+}
+
+.right-switcher {
+    width: 16px;
+    height: 27px;
+    margin: 0 0 203px 77px;
+}
+
+.pinkline {
+    height: 15px;
+    background-color: #f06c64;
+}
+
+.services {
+    height: 488px;
+    background-color: #f2f2f2;
+}
+
+h2 {
+    font-size: 30px;
+    color: rgba(102, 109, 137, 255);
+    text-align: justify;
+    letter-spacing: 1.45px;
+    padding: 61px 0 10px 41px;
+}
+
+.services p {
+    font-size: 18px;
+    color: rgba(118, 126, 158, 255);
+    text-align: justify;
+    line-height: 1.7;
+    padding: 8px 41px;
+}
+
+.grayline {
+    height: 6px;
+    background-color: #f2f2f2;
+}
+
