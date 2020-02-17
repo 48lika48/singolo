@@ -1,4 +1,59 @@
-body {
-    width: 1020px;
+@font-face{
+    font-family: "Lato-Bold";
+    src: url("assets/Lato-Bold.ttf");
+    font-family: "MyriadPro-Regular";
+    src: url("assets/MyriadPro-Regular.ttf");
 }
 
+body {
+    width: 1020px;
+    margin: 0 auto;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+header {
+    font-family: Lato-Bold, MyriadPro-Regular;
+    height: 89px;
+    color: white;
+    background-color: #2d303a;
+    display: flex;
+	justify-content: space-between;
+}
+
+h1 {
+    font-size: 19.03448pt;
+    text-align: justify;
+    letter-spacing: 1.45px;
+    margin: 25px 0 0 40px;
+}
+
+nav {
+    font-size: 8.65655pt;
+    text-align: justify;
+    margin: 40px 30px 0 0;
+}
+
+nav span {
+    color: #494e62;
+    vertical-align: 4px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    letter-spacing: 1.45px;
+    padding: 0 10px;
+}
+
+.red {
+    color: #f06c64;
+}
+
+.line {
+    height: 6px;
+    background-color: #323746;
+}
