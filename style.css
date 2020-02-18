@@ -1,6 +1,8 @@
 @font-face{
     font-family: "Lato-Bold";
     src: url("assets/Lato-Bold.ttf");
+    font-family: "Lato-Regular";
+    src: url("assets/Lato-Regular.ttf");
     font-family: "MyriadPro-Regular";
     src: url("assets/MyriadPro-Regular.ttf");
 }
@@ -8,7 +10,6 @@
 body {
     width: 1020px;
     margin: 0 auto;
-    font-family: Lato-Bold, MyriadPro-Regular;
 }
 
 * {
@@ -21,7 +22,8 @@ header {
     color: white;
     background-color: #2d303a;
     display: flex;
-	justify-content: space-between;
+    justify-content: space-between;
+    font-family: Lato-Bold, MyriadPro-Regular;
 }
 
 h1 {
@@ -61,7 +63,7 @@ nav a {
 .gallery {
     height: 585px;
     background-color: #f06c64;
-    
+    font-family: Lato-Bold, MyriadPro-Regular;
 }
 
 .left-switcher {
@@ -73,7 +75,7 @@ nav a {
 .vertical-phone {
     width: 215px;
     height: 458px;
-    margin: 53px 0 0 50px;
+    margin: 53px 0 0 51px;
     box-shadow: 20px 20px 0 5px #ce5d56;
     border-radius: 0px 30px 25px 25px;
 }
@@ -81,7 +83,7 @@ nav a {
 .horizontal-phone {
     width: 458px;
     height: 215px;
-    margin: 0 0 122px 94px;
+    margin: 0 0 122px 95px;
     box-shadow: 20px 20px 0 5px #ce5d56;
     border-radius: 0px 30px 25px 25px;
 }
@@ -100,6 +102,8 @@ nav a {
 .services {
     height: 488px;
     background-color: #f2f2f2;
+    padding: 0 41px;
+    font-family: Lato-Bold, MyriadPro-Regular;
 }
 
 h2 {
@@ -107,7 +111,7 @@ h2 {
     color: rgba(102, 109, 137, 255);
     text-align: justify;
     letter-spacing: 1.45px;
-    padding: 61px 0 10px 41px;
+    padding: 61px 0 10px 0;
 }
 
 .services p {
@@ -115,7 +119,7 @@ h2 {
     color: rgba(118, 126, 158, 255);
     text-align: justify;
     line-height: 1.7;
-    padding: 8px 41px;
+    padding: 8px 0 42px 0;
 }
 
 .grayline {
@@ -123,3 +127,32 @@ h2 {
     background-color: #f2f2f2;
 }
 
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 320px);
+    grid-template-rows: repeat(2, 125px);
+ }
+
+.box img {
+    float: left;
+    width: 59px;
+    height: 59px;
+    padding: 2px 20px 0 0;
+ }
+
+h3 {
+    color: rgba(102, 109, 137, 255);
+    text-align: justify;
+    letter-spacing: 0.3px;
+    font-family: Lato-Bold, MyriadPro-Regular;
+}
+
+ .box p {
+    font-family: Lato-Regular, MyriadPro-Regular;
+    font-size: 12.5px;
+    color: rgba(118, 126, 158, 255);
+    text-align: justify;
+    letter-spacing: 0.05px;
+    margin-right: 5px; 
+    padding: 8px 12px 0 78px;
+ }
