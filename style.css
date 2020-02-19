@@ -156,3 +156,15 @@ h3 {
     margin-right: 5px; 
     padding: 8px 12px 0 78px;
  }
+
+a:hover, h2:hover, h3:hover {
+    color: darkred;
+}
+
+h1:hover {
+	transform: rotateZ(-10deg);
+}
+
+.left-switcher:hover, .right-switcher:hover {
+    cursor: pointer;
+}
