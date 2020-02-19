@@ -114,6 +114,10 @@ h2 {
     padding: 61px 0 10px 0;
 }
 
+.gallery h2 {
+    display: none;
+}
+
 .services p {
     font-size: 18px;
     color: rgba(118, 126, 158, 255);
