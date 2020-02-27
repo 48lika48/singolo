@@ -176,8 +176,8 @@ h1:hover {
 .portfolio {
     height: 864px;
     background-color: #2d303a;
-    padding: 0 41px;
     font-family: Lato-Bold, MyriadPro-Regular;
+    padding: 0 41px;
 }
 
 .portfolio p {
@@ -202,10 +202,10 @@ h1:hover {
     margin: 2px 7px 20px 0;
 }
 
-.all {
+#all {
     width: 29px;
-    color: white;
-    border-color: white;
+    color: #c5c5c5;
+    border-color: #c5c5c5;
 }
 
 .web {
@@ -221,11 +221,13 @@ h1:hover {
 }
 
 .pf-wrapper {
+    height: 600px;
     display: grid;
     grid-template-columns: repeat(4, 220px);
     grid-template-rows: repeat(3, 187px);
     grid-column-gap: 20px;
     grid-row-gap: 20px;
+    overflow: hidden;
  }
 
 .pf img {
@@ -236,4 +238,62 @@ h1:hover {
 .greyline {
     height: 6px;
     background-color: #323746;
+}
+
+button {
+    cursor: pointer;
+}
+
+.about {
+    height: 722px;
+    background-color: #f2f2f2;
+    font-family: Lato-Bold, MyriadPro-Regular;
+    padding: 0 41px;
+}
+
+.about p {
+    font-size: 18px;
+    color: rgba(118, 126, 158, 255);
+    text-align: justify;
+    line-height: 1.7;
+    padding: 8px 0;
+}
+
+.persons {
+    display: flex;
+    justify-content: space-between;
+    padding: 35px 0;
+}
+
+.persons img {
+    width: 300px;
+    height: 300px;
+}
+
+figure {
+    width: 300px;
+}
+
+h4 {
+    font-size: 18px;
+    color: rgba(102, 109, 137, 255);
+    letter-spacing: 0.5px;
+    padding-top: 12px;
+}
+
+.persons p {
+    font-size: 12.8px;
+    color: rgba(118, 126, 158, 255);
+    text-align: justify;
+}
+
+.persons a img {
+    width: 32px;
+    height: 32px;
+    padding: 14px 2px;
+}
+
+.whiteline {
+    height: 6px;
+    background-color: #ffffff;
 }
