@@ -240,10 +240,6 @@ h1:hover {
     background-color: #323746;
 }
 
-button {
-    cursor: pointer;
-}
-
 .about {
     height: 722px;
     background-color: #f2f2f2;
@@ -296,4 +292,12 @@ h4 {
 .whiteline {
     height: 6px;
     background-color: #ffffff;
+}
+
+a, button {
+    cursor: pointer;
+}
+
+button:hover {
+	transform: scale(1.2);
 }
