@@ -398,6 +398,11 @@ h5 {
     padding-left: 10px;
 }
 
+.info a {
+    text-decoration: none;
+    color: rgba(240, 216, 217, 255);
+}
+
 .send {
     width: 100px;
     height: 38px;
@@ -408,10 +413,47 @@ h5 {
     color: #ebbfc0;
     letter-spacing: 2px;
     padding-left: 30px;
-    margin-left: 520px;
+    margin-left: 518px;
 }
 
 .pinkline {
     height: 6px;
     background-color: #ea676b;
+}
+
+footer {
+    height: 76px;
+    display: flex;
+    justify-content: space-between;
+    font-family: Lato-Regular, MyriadPro-Regular;
+    background-color: #2d303a;
+    color: rgba(240, 216, 217, 255);
+    padding: 0 40px;
+}
+
+footer p {
+    font-size: 12.5px;
+    padding: 30px 0 0 2px;
+}
+
+footer a img {
+    width: 32px;
+    height: 32px;
+    padding: 14px 2px;
+}
+
+.icons {
+    padding: 8px 0 0 0;
+}
+
+a:hover, h2:hover, h5:hover {
+    color: darkred;
+}
+
+a, .send {
+    cursor: pointer;
+}
+
+.send:hover, .icons img:hover {
+	transform: scale(1.15);
 }
