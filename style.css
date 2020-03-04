@@ -1,0 +1,454 @@
+@font-face{
+    font-family: "Lato-Bold";
+    src: url("assets/Lato-Bold.ttf");
+    font-family: "Lato-Regular";
+    src: url("assets/Lato-Regular.ttf");
+    font-family: "MyriadPro-Regular";
+    src: url("assets/MyriadPro-Regular.ttf");
+}
+
+body {
+    width: 1020px;
+    margin: 0 auto;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+h2 {
+    font-size: 30px;
+    color: rgba(102, 109, 137, 255);
+    text-align: justify;
+    letter-spacing: 1.45px;
+    padding: 61px 0 10px 0;
+}
+
+header {
+    height: 89px;
+    color: white;
+    background-color: #2d303a;
+    display: flex;
+    justify-content: space-between;
+    font-family: Lato-Bold, MyriadPro-Regular;
+}
+
+h1 {
+    font-size: 19.03448pt;
+    text-align: justify;
+    letter-spacing: 1.45px;
+    margin: 25px 0 0 40px;
+}
+
+nav {
+    font-size: 8.65655pt;
+    text-align: justify;
+    margin: 40px 30px 0 0;
+}
+
+nav span {
+    color: #494e62;
+    vertical-align: 4px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    letter-spacing: 1.45px;
+    padding: 0 10px;
+}
+
+.red {
+    color: #f06c64;
+}
+
+.darkline {
+    height: 6px;
+    background-color: #323746;
+}
+
+.gallery {
+    height: 595px;
+    background-color: #f06c64;
+    font-family: Lato-Bold, MyriadPro-Regular;
+}
+
+.left-switcher {
+    width: 16px;
+    height: 27px;
+    margin: 0 0 203px 42px;
+}
+
+.vertical-phone {
+    width: 215px;
+    height: 458px;
+    margin: 53px 0 0 51px;
+    box-shadow: 20px 20px 0 5px #ce5d56;
+    border-radius: 0px 30px 25px 25px;
+}
+
+.horizontal-phone {
+    width: 458px;
+    height: 215px;
+    margin: 0 0 122px 95px;
+    box-shadow: 20px 20px 0 5px #ce5d56;
+    border-radius: 0px 30px 25px 25px;
+}
+
+.right-switcher {
+    width: 16px;
+    height: 27px;
+    margin: 0 0 203px 77px;
+}
+
+.pinkline {
+    height: 15px;
+    background-color: #f06c64;
+}
+
+.services {
+    height: 493px;
+    background-color: #f2f2f2;
+    padding: 0 41px;
+    font-family: Lato-Bold, MyriadPro-Regular;
+}
+
+.gallery h2 {
+    display: none;
+}
+
+.services p {
+    font-size: 18px;
+    color: rgba(118, 126, 158, 255);
+    text-align: justify;
+    line-height: 1.7;
+    padding: 8px 0 42px 0;
+}
+
+.grayline {
+    height: 6px;
+    background-color: #ffffff;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 320px);
+    grid-template-rows: repeat(2, 125px);
+}
+
+.box img {
+    float: left;
+    width: 59px;
+    height: 59px;
+    padding: 2px 20px 0 0;
+}
+
+h3 {
+    color: rgba(102, 109, 137, 255);
+    text-align: justify;
+    letter-spacing: 0.3px;
+    font-family: Lato-Bold, MyriadPro-Regular;
+}
+
+.box p {
+    font-family: Lato-Regular, MyriadPro-Regular;
+    font-size: 12.5px;
+    color: rgba(118, 126, 158, 255);
+    text-align: justify;
+    letter-spacing: 0.05px;
+    margin-right: 5px; 
+    padding: 8px 12px 0 78px;
+}
+
+.left-switcher:hover, .right-switcher:hover {
+    cursor: pointer;
+}
+
+.portfolio {
+    height: 864px;
+    background-color: #2d303a;
+    font-family: Lato-Bold, MyriadPro-Regular;
+    padding: 0 41px;
+}
+
+.portfolio p {
+    font-size: 18px;
+    color: rgba(118, 126, 158, 255);
+    text-align: justify;
+    line-height: 1.7;
+    padding: 8px 0;
+}
+
+.portfolio form {
+    display: inline-block;
+}
+
+.portfolio button {
+    color: #767e9e;
+    background: none;
+    height: 22px;
+    font-size: 12px;
+    border: 1px solid #666d89;
+    border-radius: 5px;
+    margin: 2px 7px 20px 0;
+}
+
+#all {
+    width: 29px;
+    color: #c5c5c5;
+    border-color: #c5c5c5;
+}
+
+.web {
+    width: 78px;
+}
+
+.graphic {
+    width: 93px;
+}
+
+.art {
+    width: 57px;
+}
+
+.pf-wrapper {
+    height: 600px;
+    display: grid;
+    grid-template-columns: repeat(4, 220px);
+    grid-template-rows: repeat(3, 187px);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    overflow: hidden;
+ }
+
+.pf img {
+    width: 220px;
+    height: 186px;
+}
+
+.greyline {
+    height: 6px;
+    background-color: #323746;
+}
+
+.about {
+    height: 727px;
+    background-color: #f2f2f2;
+    font-family: Lato-Bold, MyriadPro-Regular;
+    padding: 0 41px;
+}
+
+.about p {
+    font-size: 18px;
+    color: rgba(118, 126, 158, 255);
+    text-align: justify;
+    line-height: 1.7;
+    padding: 8px 0;
+}
+
+.persons {
+    display: flex;
+    justify-content: space-between;
+    padding: 35px 0;
+}
+
+.persons img {
+    width: 300px;
+    height: 300px;
+}
+
+figure {
+    width: 300px;
+}
+
+h4 {
+    font-size: 18px;
+    color: rgba(102, 109, 137, 255);
+    letter-spacing: 0.5px;
+    padding-top: 12px;
+}
+
+.persons p {
+    font-size: 12.8px;
+    color: rgba(118, 126, 158, 255);
+    text-align: justify;
+}
+
+
+.icons {
+    padding: 8px 0 0 0;
+}
+
+.persons a img {
+    width: 32px;
+    height: 32px;
+    padding: 6px 2px;
+}
+
+.whiteline {
+    height: 6px;
+    background-color: #ffffff;
+}
+
+.contact {
+    height: 648px;
+    background-color: #f06c64;
+    font-family: Lato-Bold, MyriadPro-Regular;
+    padding: 0 41px;
+}
+
+.contact h2 {
+    color: rgba(240, 216, 217, 255);
+}
+
+.contact p {
+    font-size: 18px;
+    color: rgba(240, 216, 217, 255);
+    text-align: justify;
+    line-height: 1.7;
+    padding: 8px 0;
+}
+
+.quote {
+    font-family: Lato-Regular, MyriadPro-Regular;
+    display: flex;
+    padding-top: 27px;
+}
+
+.quote p {
+    font-size: 12pt;
+    color: rgba(244, 140, 143, 255);
+    text-align: justify;
+}
+
+input, textarea {
+    width: 604px;
+    border: none;
+    border-radius: 4px 4px 4px 4px;
+    padding-left: 14px;
+}
+
+input {
+    height: 38px;
+    vertical-align: middle;
+}
+
+textarea {
+    height: 190px;
+    padding-top: 10px;
+}
+
+.burgundy {
+    background-color: #d6564f;
+}
+
+::placeholder { 
+    font-family: Lato-Regular, MyriadPro-Regular;
+    font-size: 12.5px;
+    color: #f08586;
+    opacity: 1;
+}
+
+.info {
+    padding: 8px 0 0 23px;
+}
+
+h5 {
+    font-family: Lato-Black, MyriadPro-Regular;
+    font-size: 18px;
+    letter-spacing: 0.7px;
+    color: rgba(240, 216, 217, 255);
+    text-align: justify;
+}
+
+.info p  {
+    font-family: Lato-Regular, MyriadPro-Regular;
+    font-size: 12px;
+    line-height: 1.8;
+    color: rgba(240, 216, 217, 255);
+    text-align: justify;
+    padding-bottom: 22px;
+}
+
+.info img {
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.info figcaption {
+    font-family: Lato-Regular, MyriadPro-Regular;
+    font-size: 12px;
+    line-height: 1.8;
+    letter-spacing: 0.3px;
+    display: inline-block;
+    color: rgba(240, 216, 217, 255);
+    text-align: justify;
+    padding-left: 10px;
+}
+
+.info a {
+    text-decoration: none;
+    color: rgba(240, 216, 217, 255);
+}
+
+.send {
+    width: 100px;
+    height: 38px;
+    vertical-align: middle;
+    text-align: justify;
+    border: none;
+    background-color: #d6564f;
+    color: #ebbfc0;
+    letter-spacing: 2px;
+    padding-left: 30px;
+    margin-left: 518px;
+}
+
+.pinkline {
+    height: 6px;
+    background-color: #ea676b;
+}
+
+footer {
+    height: 76px;
+    display: flex;
+    justify-content: space-between;
+    font-family: Lato-Regular, MyriadPro-Regular;
+    background-color: #2d303a;
+    color: rgba(240, 216, 217, 255);
+    padding: 0 40px;
+}
+
+footer p {
+    font-size: 12.5px;
+    color: rgba(102, 109, 137, 255);
+    text-align: justify;
+    padding: 30px 0 0 2px;
+}
+
+footer a img {
+    width: 32px;
+    height: 32px;
+    padding: 14px 2px;
+}
+
+a:hover, h2:hover, h3:hover, h4:hover, h5:hover {
+    color: darkred;
+}
+
+h1:hover {
+	transform: rotateZ(-10deg);
+}
+
+a, button, .send {
+    cursor: pointer;
+}
+
+button:hover {
+	transform: scale(1.2);
+}
+
+.send:hover, .icons img:hover {
+	transform: scale(1.15);
+}
