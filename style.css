@@ -7,9 +7,14 @@
     src: url("assets/MyriadPro-Regular.ttf");
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     width: 1020px;
     margin: 0 auto;
+    padding-left: 30px;
 }
 
 * {
@@ -72,39 +77,84 @@ nav a {
     height: 595px;
     background-color: #f06c64;
     font-family: Lato-Bold, MyriadPro-Regular;
+    overflow: hidden;
+}
+
+.slider {
+    display: flex;
+}
+
+.slide-1 {
+    height: 595px;
+    margin-right: 467px;
+}
+
+.slide-2 {
+    height: 595px;
+    position: relative;
+    z-index: 1;
 }
 
 .left-switcher {
     width: 16px;
     height: 27px;
-    margin: 0 0 203px 42px;
+    position: relative;
+    z-index: 2;
+    bottom: 314px;
+    left: 42px;
 }
 
 .vertical-phone {
     width: 215px;
     height: 458px;
-    margin: 53px 0 0 51px;
     box-shadow: 20px 20px 0 5px #ce5d56;
     border-radius: 0px 30px 25px 25px;
+    position: relative;
+    z-index: 0;
+    left: 113px;
+    top: 53px;
 }
 
 .horizontal-phone {
     width: 458px;
     height: 215px;
-    margin: 0 0 122px 95px;
     box-shadow: 20px 20px 0 5px #ce5d56;
     border-radius: 0px 30px 25px 25px;
+    margin-right: 95px;
+    position: relative;
+    z-index: 0;
+    left: 426px;
+    bottom: 289px;
 }
 
 .right-switcher {
     width: 16px;
     height: 27px;
-    margin: 0 0 203px 77px;
+    position: relative;
+    z-index: 2;
+    bottom: 314px;
+    left: 945px;
 }
 
-.pinkline {
-    height: 15px;
-    background-color: #f06c64;
+#black-vertical {
+    background-color: #2d303a;
+    width: 189px;
+    height: 334px;
+    position: relative;
+    z-index: -1;
+    bottom: 565px;
+    left: 126px;
+
+}
+
+#black-horizontal {
+    background-color: #2d303a;
+    width: 333px;
+    height: 189px;
+    position: relative;
+    z-index: -1;
+    bottom: 829px;
+    left: 486px;
 }
 
 .services {
@@ -123,7 +173,7 @@ nav a {
     color: rgba(118, 126, 158, 255);
     text-align: justify;
     line-height: 1.7;
-    padding: 8px 0 42px 0;
+    padding: 8px 0 41px 0;
 }
 
 .grayline {
@@ -194,10 +244,8 @@ h3 {
     margin: 2px 7px 20px 0;
 }
 
-#all {
+.all {
     width: 29px;
-    color: #c5c5c5;
-    border-color: #c5c5c5;
 }
 
 .web {
@@ -212,7 +260,7 @@ h3 {
     width: 57px;
 }
 
-.pf-wrapper {
+#pf-wrapper {
     height: 600px;
     display: grid;
     grid-template-columns: repeat(4, 220px);
@@ -433,22 +481,74 @@ footer a img {
     padding: 14px 2px;
 }
 
-a:hover, h2:hover, h3:hover, h4:hover, h5:hover {
-    color: darkred;
+button:focus {
+    outline: 0;
 }
 
-h1:hover {
-	transform: rotateZ(-10deg);
+h2:hover, h3:hover, h4:hover, h5:hover {
+    color: rgb(100, 0, 0);;
 }
 
-a, button, .send {
+button, .send {
     cursor: pointer;
 }
 
-button:hover {
-	transform: scale(1.2);
+.send:hover, .icons img:hover {
+	transform: scale(1.1);
 }
 
-.send:hover, .icons img:hover {
-	transform: scale(1.15);
+nav a.active {
+    color: #f06c64;
+}
+
+nav a:not(.active):hover {
+    cursor: pointer;
+    color: #f06c64;
+}
+
+.portfolio button.active{
+    color: #c5c5c5;
+    border-color: #c5c5c5;
+}
+
+.portfolio button:not(.active):hover{
+    cursor: pointer;
+    color: #c5c5c5;
+    border-color: #c5c5c5;
+}
+
+#pf-wrapper img.active{
+    width: 210px;
+    height: 176px;
+    border: 5px solid #F06C64;
+}
+
+#pf-wrapper img:not(.active):hover{
+    cursor: pointer;
+    width: 220px;
+    height: 186px;
+}
+
+#message-block{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 2798px;
+    left: 0;
+    background: #0008;
+}
+  
+#message-block.hidden{
+    display: none;
+}
+  
+#message{
+    position: absolute;
+    top: 52%;
+    left: 30%;
+    border: 5px double #2d303a;
+    background-color: rgb(100, 0, 0);
+    font-family: Lato-Regular;
+    text-align: center;
+    padding: 50px 40px;
 }

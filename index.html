@@ -7,10 +7,10 @@
     <title>Singolo</title>
 </head>
 <body>
-    <header>
-        <h1 id="home">SINGOLO<sup class="red">*</sup></h1>
-        <nav>
-            <a href="#home" class="red">HOME</a>
+    <header id="home">
+        <h1>SINGOLO<sup class="red">*</sup></h1>
+        <nav id="menu">
+            <a href="#home" class="active">HOME</a>
             <span>.</span>
             <a href="#services">SERVICES</a>
             <span>.</span>
@@ -24,10 +24,29 @@
     <div class="darkline"></div>
     <main>
         <section class="gallery">
-            <h2>Smartphones</h2>
+            <div class="slider">
+                <div class="slide-2" id="lastClone">
+                    <img src="assets/slide-2.png" alt="Slide 2">
+                </div>
+                <div class="slide-1">
+                    <h2>Smartphones</h2>
+                    <img class="vertical-phone" src="assets/vertical-phone.png" alt="Vertical Phone" onclick="blackVerticalField()">
+                    <img class="horizontal-phone" src="assets/horizontal-phone.png" alt="Horizontal Phone" onclick="blackHorizontalField()">
+                    <article id="black-vertical" onclick="normalVerticalField()"></article>
+                    <article id="black-horizontal" onclick="normalHorizontalField()"></article>
+                </div>
+                <div class="slide-2">
+                    <img src="assets/slide-2.png" alt="Slide 2">
+                </div>
+                <div class="slide-1" id="firstClone">
+                    <h2>Smartphones</h2>
+                    <img class="vertical-phone" src="assets/vertical-phone.png" alt="Vertical Phone" onclick="blackVerticalField()">
+                    <img class="horizontal-phone" src="assets/horizontal-phone.png" alt="Horizontal Phone" onclick="blackHorizontalField()">
+                    <article id="black-vertical" onclick="normalVerticalField()"></article>
+                    <article id="black-horizontal" onclick="normalHorizontalField()"></article>
+                </div>
+            </div>
             <img class="left-switcher" src="assets/left-switcher.png" alt="Left Switcher">
-            <img class="vertical-phone" src="assets/vertical-phone.png" alt="Vertical Phone">
-            <img class="horizontal-phone" src="assets/horizontal-phone.png" alt="Horizontal Phone">
             <img class="right-switcher" src="assets/right-switcher.png" alt="Right Switcher">
         </section>
         <div class="pinkline"></div>
@@ -73,14 +92,14 @@
         <section class="portfolio">
             <h2 id="portfolio">Portfolio</h2>
             <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
-            <span>
-                <button id="all">All</button>
-                <button class="web">Web Design</button>
-                <button class="graphic">Graphic Design</button>
-                <button class="art">Artwork</button>
+            <span id="portfolioButton">
+                <button class="all active" onclick="randomImg()">All</button>
+                <button class="web" onclick="randomImg()">Web Design</button>
+                <button class="graphic" onclick="randomImg()">Graphic Design</button>
+                <button class="art" onclick="randomImg()">Artwork</button>
             </span>
-            <div class="pf-wrapper">
-                <div class="pf pf1-1">
+            <div id="pf-wrapper">
+                <div class="pf pf1-1 active">
                     <img src="assets/portfolio1-1.png" alt="Ship">
                 </div>
                 <div class="pf pf1-2">
@@ -175,10 +194,18 @@
                 <form>
                     <p><input class="burgundy" type="text" name="name" placeholder="Name (Required)" required></p>
                     <p><input class="burgundy" type="email" name="email" placeholder="Email (Required)" required></p>
-                    <p><input class="burgundy" type="text" name="subject" placeholder="Subject"></p>
-                    <p><textarea class="burgundy" name="message" placeholder="Describe your project in detail..."></textarea></p> 
-                    <p><input class="burgundy send" type="submit" value="SEND"></p>
+                    <p><input id="subject" class="burgundy" type="text" name="subject" placeholder="Subject"></p>
+                    <p><textarea id="description" class="burgundy" name="message" placeholder="Describe your project in detail..."></textarea></p>
+                    <p><input id="form-button" class="burgundy send" type="submit" value="SEND"></p>
                 </form>
+                <div id="message-block" class="hidden">
+                    <div id="message">
+                        <p>The letter was sent</p>
+                        <p><span id="message-subject"></span></p>
+                        <p><span id="message-description"></span></p>
+                        <button id="close-button">OK</button>
+                    </div>
+                </div>
                 <div class="info">
                     <h5>Contact Information</h5>
                     <p>Quisque hendrerit purus dapibus, ornare nibh vitae, viver-ra nibh. Fusce vitae aliquam tellus. 
@@ -210,5 +237,6 @@
             <a href="https://ru.linkedin.com/in/%D0%BA%D0%BE%D0%BF%D0%B8%D1%80%D0%B0%D0%B9%D1%82-%D0%BF%D0%B8%D1%81%D0%B0%D1%82%D0%B5%D0%BB%D1%8C-53946257"><img src="assets/linkedin.png" alt="linkedin"></a>
         </div>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
