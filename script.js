@@ -105,3 +105,8 @@ closeButton.addEventListener('click', (event) => {
 document.querySelector('form').addEventListener("click", function(event){
     event.preventDefault()
   });
+
+//formReset
+function formReset(){
+    document.getElementById('myform').reset();
+}
