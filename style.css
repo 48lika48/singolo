@@ -29,6 +29,10 @@ h2 {
     padding: 61px 0 10px 0;
 }
 
+#burger-menu{
+    display: none;
+}
+
 header {
     height: 89px;
     color: white;
@@ -267,7 +271,7 @@ h3 {
     grid-column-gap: 20px;
     grid-row-gap: 20px;
     overflow: hidden;
- }
+}
 
 .pf img {
     width: 220px;
@@ -543,14 +547,7 @@ nav a:not(.active):hover {
 #message{
     position: absolute;
     top: 50%;
-<<<<<<< HEAD
-<<<<<<< HEAD
-    left: 27%;
-=======
-=======
->>>>>>> 9f83dc0233244137a882ab0b5158b2bcfd617db1
-    left: 30%;
->>>>>>> 9f83dc0233244137a882ab0b5158b2bcfd617db1
+    left: 25%;
     border: 5px double #2d303a;
     background-color: rgb(100, 0, 0);
     font-family: Lato-Regular;
@@ -558,30 +555,12 @@ nav a:not(.active):hover {
     padding: 50px 40px;
 }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-@media screen and (max-width: 768px) {
-    body {
-        width: 768px;
-=======
-=======
->>>>>>> 9f83dc0233244137a882ab0b5158b2bcfd617db1
-@media only screen and (max-width: 1200px) {
-    html {
-		width: 1200px;
-    }
-    
-}
 
 @media screen and (max-width: 768px) {
     body {
 		width: 768px;
-<<<<<<< HEAD
->>>>>>> 9f83dc0233244137a882ab0b5158b2bcfd617db1
-=======
->>>>>>> 9f83dc0233244137a882ab0b5158b2bcfd617db1
     }
+
     nav {
         font-size: 12.6px;
         padding-left: 11px;
@@ -789,53 +768,91 @@ nav a:not(.active):hover {
         width: 768px;
         height: 631px;
         top: 2992px;
-<<<<<<< HEAD
-<<<<<<< HEAD
+
         left: 0;
     }
     #message{
         top: 50%;
         left: 21%;
-=======
-=======
->>>>>>> 9f83dc0233244137a882ab0b5158b2bcfd617db1
         left: 29%;
 
     }
     #message{
         top: 50%;
         left: 20%;
-<<<<<<< HEAD
->>>>>>> 9f83dc0233244137a882ab0b5158b2bcfd617db1
-=======
->>>>>>> 9f83dc0233244137a882ab0b5158b2bcfd617db1
         padding: 35px 25px;
     }
 }
 
 @media screen and (max-width: 375px) {
-<<<<<<< HEAD
-<<<<<<< HEAD
     body {
 		width: 375px;
     }
+
     header {
         height: 65px;
     }
-    /* h1 {
-        font-size: 19.03448pt;
-        text-align: justify;
-        letter-spacing: 1.45px;
-        margin: 25px 0 0 40px;
-    } */
+    h1 {
+        font-size: 19px;
+        letter-spacing: 2px;
+        margin: 23px 30px 0px 70px;
+        position: absolute;
+        z-index: 3;
+    }
     nav {
         display: none;
-        /* font-size: 12.6px;
-        padding-left: 11px; */
     }
-    /* nav a {
-        letter-spacing: 1px;
-    } */
+
+    #burger-menu{
+        display: block;
+    }
+    .rotate-90-cw {
+        animation: rotate-90-cw 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    }
+    @keyframes rotate-90-cw {
+        0% {
+            transform: rotate(0);
+        }
+        100% {
+            transform: rotate(90deg);
+        }
+    }
+    .trigger {
+        display: inline-block;
+        margin: 20px 0px 0 14px;
+        cursor: pointer;
+    }
+    .trigger i {
+        display: block;
+        width: 25px;
+        height: 3px;
+        margin: 6px;
+        background: white;
+    }
+    .burger-list {
+        width: 55.5vw;
+        height: 100vh;
+        display: none;
+        padding: 163px 0px 0px 70px;
+        position: relative;
+        z-index: 3;
+        list-style-type: none;
+        background-color: #2d303a;
+    }
+    li a{
+        font-size: 26px;
+        line-height: 2.2;
+        letter-spacing: 0.5px;
+        color: white;
+        text-decoration: none;
+    }
+    li a:hover{
+        color: #ea5d55;
+        text-decoration: none;
+    }
+    .show {
+        display: block;
+    }
 
     .gallery {
         height: 215px;
@@ -1040,14 +1057,4 @@ nav a:not(.active):hover {
         left: 25%;
         padding: 35px 25px;
     }
-=======
-    html {
-		width: 375px;
-	}
->>>>>>> 9f83dc0233244137a882ab0b5158b2bcfd617db1
-=======
-    html {
-		width: 375px;
-	}
->>>>>>> 9f83dc0233244137a882ab0b5158b2bcfd617db1
 }

@@ -5,6 +5,16 @@ menu.addEventListener('click', (event) => {
     event.target.classList.add('active');
 });
 
+//burger
+document.getElementById("trigger").onclick = function() {
+    open()
+};
+function open() {
+    document.getElementById("burger-list").classList.toggle("show");
+    document.getElementById("trigger").classList.toggle("rotate-90-cw");
+}
+  
+
 //blackField
 function blackVerticalField(){
     document.getElementById('black-vertical').style.zIndex = '1';
@@ -108,5 +118,5 @@ document.querySelector('form').addEventListener("click", function(event){
 
 //formReset
 function formReset(){
-    document.getElementById('myform').reset();
+    document.getElementById('my-form').reset();
 }
